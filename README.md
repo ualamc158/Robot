@@ -8,7 +8,7 @@ La zona será rectangular y debe estar dentro de los límites de la habitación 
 
 La orientación serán los puntos cardinales: norte, noreste, este, sureste, sur, suroeste, oeste, noroeste.
 
-La posición del robot vendrá expresa por sus coordenadas dentro de la zona, es decir su componenete en X y su componente en Y.
+La posición del robot vendrá expresa por sus coordenadas dentro de la zona, es decir su componente en X y su componente en Y.
 
 
 <div align="center">
