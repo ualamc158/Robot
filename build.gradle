@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'jvm-test-suite'
+    id 'application'
+}
+
+group = 'org.iesalandalus.programacion.robot'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-inline:+'
+    implementation 'com.github.JRJimenezReyes:entrada:1.0.3'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass.set('org.iesalandalus.programacion.robot.Main')
+}
+
+run {
+    standardInput = System.in
+}

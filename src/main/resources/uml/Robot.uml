@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:record="http:///schemas/record/_Dg5xsHSZEe6RyuvFF9iE1Q/0" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/record/_Dg5xsHSZEe6RyuvFF9iE1Q/0 /Robot/src/main/resources/uml/record.profile.uml#_Dg6YwHSZEe6RyuvFF9iE1Q">
+  <uml:Model xmi:id="_qm5hwIUsEe653f5rCCI_Kw" name="Robot">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_qrREYIUsEe653f5rCCI_Kw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6WUA8IUsEe653f5rCCI_Kw" name="generated"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NV5QYIUtEe6lAqwTcRpJlQ" name="Robot">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NWrTgIUtEe6lAqwTcRpJlQ" name="org">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NWr6kIUtEe6lAqwTcRpJlQ" name="iesalandalus">
+          <packagedElement xmi:type="uml:Package" xmi:id="_NWshoIUtEe6lAqwTcRpJlQ" name="programacion">
+            <packagedElement xmi:type="uml:Package" xmi:id="_NWtIsIUtEe6lAqwTcRpJlQ" name="robot">
+              <packagedElement xmi:type="uml:Package" xmi:id="_NWtvwIUtEe6lAqwTcRpJlQ" name="modelo"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_aHAV8IUuEe6MC-yrh3G8mA" name="vista">
+                <packagedElement xmi:type="uml:Class" xmi:id="_aHNKQIUuEe6MC-yrh3G8mA" name="Zona"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_aHZXgIUuEe6MC-yrh3G8mA" name="Orientacion"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_aHe3EYUuEe6MC-yrh3G8mA" name="Coordenada"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_aHmy4IUuEe6MC-yrh3G8mA" name="ControladorRobot"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NXa6YIUtEe6lAqwTcRpJlQ" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NXcvkIUtEe6lAqwTcRpJlQ" name="primitivetype">
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NXekwIUtEe6lAqwTcRpJlQ" name="int"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_gcUHoIUtEe6lAqwTcRpJlQ" name="boolean"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RTIskIUuEe6MC-yrh3G8mA" name="char"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Hv40sIUuEe6MC-yrh3G8mA" name="javax">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Hv6p4IUuEe6MC-yrh3G8mA" name="naming">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Hv74AIUuEe6MC-yrh3G8mA" name="OperationNotSupportedException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lLi24IUtEe6lAqwTcRpJlQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_lLjd8IUtEe6lAqwTcRpJlQ" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_lLkFAIUtEe6lAqwTcRpJlQ" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_lLkFAYUtEe6lAqwTcRpJlQ" name="String"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HwQoIIUuEe6MC-yrh3G8mA" name="Object"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_I1_PMIUwEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot">
+      <packagedElement xmi:type="uml:Class" xmi:id="_n4yq0IUuEe6MC-yrh3G8mA" name="Main" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_n45_kIUuEe6MC-yrh3G8mA" name="controladorRobot" visibility="private" isStatic="true" type="_RS9tcIUuEe6MC-yrh3G8mA" isUnique="false" aggregation="composite" association="_p2CTQIUxEe6MC-yrh3G8mA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n4-4EIUuEe6MC-yrh3G8mA" name="main" specification="_n47NsIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    int opcion;
+    do {
+        Consola.mostrarMenuPrincipal();
+        opcion = Consola.elegitOpcion();
+        ejecutarOpcion(opcion);
+        Consola.mostrarRobot(controladorRobot);
+    } while (opcion != 0);
+    Consola.despedirse();
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5BUUIUuEe6MC-yrh3G8mA" name="ejecutarOpcion" specification="_n5AGMIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+//        switch (opcion) {
+//            case 1 -> controlarRobotDefecto();
+//            case 2 -> controlarRobotZona();
+//            case 3 -> controlarRobotZonaOrientacion();
+//            case 4 -> controlarRobotZonaOrientacionCoordenada();
+//            case 5 -> ejecutarComando();
+//            default -> {}
+//        }
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5CicIUuEe6MC-yrh3G8mA" name="controlarRobotDefecto" specification="_n5B7YIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    controladorRobot = new ControladorRobot(new Robot());
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5DJgIUuEe6MC-yrh3G8mA" name="controlarRobotZona" specification="_n5CicYUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    controladorRobot = new ControladorRobot(new Robot(Consola.elegirZona()));
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5DwkYUuEe6MC-yrh3G8mA" name="controlarRobotZonaOrientacion" specification="_n5DwkIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    controladorRobot = new ControladorRobot(new Robot(Consola.elegirZona(), Consola.elegirOrientacion()));
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5E-sIUuEe6MC-yrh3G8mA" name="controlarRobotZonaOrientacionCoordenada" specification="_n5EXoIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    try {
+        controladorRobot = new ControladorRobot(new Robot(Consola.elegirZona(), Consola.elegirOrientacion(), Consola.elegirCoordenada()));
+    } catch (IllegalArgumentException iae) {
+        System.out.println(&quot;ERROR: &quot; + iae.getMessage());
+    }
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n5GM0IUuEe6MC-yrh3G8mA" name="ejecutarComando" specification="_n5FlwIUuEe6MC-yrh3G8mA">
+          <language>JAVA</language>
+          <body>
+    if (controladorRobot != null) {
+        try {
+            controladorRobot.ejecutar(Consola.elegirComando());
+        } catch (OperationNotSupportedException onse) {
+            System.out.println(&quot;ERROR: &quot; + onse.getMessage());
+        }
+    }
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n47NsIUuEe6MC-yrh3G8mA" name="main" visibility="public" isStatic="true" method="_n4-4EIUuEe6MC-yrh3G8mA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_n48b0IUuEe6MC-yrh3G8mA" name="args" type="_lLkFAYUtEe6lAqwTcRpJlQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n4-RAIUuEe6MC-yrh3G8mA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n4-RAYUuEe6MC-yrh3G8mA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5AGMIUuEe6MC-yrh3G8mA" name="ejecutarOpcion" visibility="private" isStatic="true" method="_n5BUUIUuEe6MC-yrh3G8mA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_n5AtQIUuEe6MC-yrh3G8mA" name="opcion" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5B7YIUuEe6MC-yrh3G8mA" name="controlarRobotDefecto" visibility="private" isStatic="true" method="_n5CicIUuEe6MC-yrh3G8mA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5CicYUuEe6MC-yrh3G8mA" name="controlarRobotZona" visibility="private" isStatic="true" method="_n5DJgIUuEe6MC-yrh3G8mA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5DwkIUuEe6MC-yrh3G8mA" name="controlarRobotZonaOrientacion" visibility="private" isStatic="true" method="_n5DwkYUuEe6MC-yrh3G8mA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5EXoIUuEe6MC-yrh3G8mA" name="controlarRobotZonaOrientacionCoordenada" visibility="private" isStatic="true" method="_n5E-sIUuEe6MC-yrh3G8mA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_n5FlwIUuEe6MC-yrh3G8mA" name="ejecutarComando" visibility="private" isStatic="true" method="_n5GM0IUuEe6MC-yrh3G8mA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_zNakQIUvEe6MC-yrh3G8mA" name="modelo">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__5YWAIUuEe6MC-yrh3G8mA" annotatedElement="_lLa7EIUtEe6lAqwTcRpJlQ">
+          <body>- nombre: String
+------------------------------------------
+- Orientacion(nombre: String)
++ toString(): String</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_lLa7EIUtEe6lAqwTcRpJlQ" name="Orientacion" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lLrZwIUtEe6lAqwTcRpJlQ" name="nombre" visibility="private" isLeaf="true" type="_lLkFAYUtEe6lAqwTcRpJlQ" isUnique="false"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lLsn4IUtEe6lAqwTcRpJlQ" name="Orientacion" visibility="private">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lLyHcIUtEe6lAqwTcRpJlQ" name="nombre" type="_lLkFAYUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lLyugIUtEe6lAqwTcRpJlQ" name="toString" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lLzVkIUtEe6lAqwTcRpJlQ" type="_lLkFAYUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLcwQIUtEe6lAqwTcRpJlQ" name="NORTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLdXUIUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Norte&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLd-YIUtEe6lAqwTcRpJlQ" name="NORESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLd-YYUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Noreste&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLelcIUtEe6lAqwTcRpJlQ" name="ESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLelcYUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Este&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLelcoUtEe6lAqwTcRpJlQ" name="SURESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLfMgIUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Sureste&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLfzkIUtEe6lAqwTcRpJlQ" name="SUR">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLfzkYUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Sur&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLgaoIUtEe6lAqwTcRpJlQ" name="SUROESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLgaoYUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Suroeste&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLhBsIUtEe6lAqwTcRpJlQ" name="OESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLhowIUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Oeste&quot;</body>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLiP0IUtEe6lAqwTcRpJlQ" name="NOROESTE">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLiP0YUtEe6lAqwTcRpJlQ" name="specification">
+              <language>JAVA</language>
+              <body>&quot;Noroeste&quot;</body>
+            </specification>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NWwMAIUtEe6lAqwTcRpJlQ" name="Coordenada" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NXfy4IUtEe6lAqwTcRpJlQ" name="x" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NXkEUIUtEe6lAqwTcRpJlQ" name="y" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HslpEIUuEe6MC-yrh3G8mA" name="Robot" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HtIboIUuEe6MC-yrh3G8mA" name="zona" visibility="private" type="_gTBowIUtEe6lAqwTcRpJlQ" isUnique="false" aggregation="composite" association="_ifsX0IUxEe6MC-yrh3G8mA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HtMtEIUuEe6MC-yrh3G8mA" name="coordenada" visibility="private" type="_NWwMAIUtEe6lAqwTcRpJlQ" isUnique="false" aggregation="composite" association="_jZ8ZkIUxEe6MC-yrh3G8mA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HtWeEIUuEe6MC-yrh3G8mA" name="orientacion" visibility="private" type="_lLa7EIUtEe6lAqwTcRpJlQ" isUnique="false" aggregation="composite" association="_kXaHYIUxEe6MC-yrh3G8mA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HtluoIUuEe6MC-yrh3G8mA" name="Robot" specification="_HtXsMIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    zona = new Zona();
+    coordenada = zona.getCentro();
+    orientacion = Orientacion.NORTE;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ht8T8IUuEe6MC-yrh3G8mA" name="Robot" specification="_HtrOMIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    setZona(zona);
+    setCoordenada(zona.getCentro());
+    setOrientacion(Orientacion.NORTE);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HuUHYIUuEe6MC-yrh3G8mA" name="Robot" specification="_HuBMcIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    setZona(zona);
+    setCoordenada(zona.getCentro());
+    setOrientacion(orientacion);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HuxaYIUuEe6MC-yrh3G8mA" name="Robot" specification="_Hua1EIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    setZona(zona);
+    setCoordenada(coordenada);
+    setOrientacion(orientacion);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hu-1wIUuEe6MC-yrh3G8mA" name="Robot" specification="_Hu1EwIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    Objects.requireNonNull(robot, &quot;El robot no puede ser nulo.&quot;);
+    zona = robot.getZona();
+    coordenada = robot.getCoordenada();
+    orientacion = robot.getOrientacion();
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvH_sIUuEe6MC-yrh3G8mA" name="getZona" specification="_HvBSAIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return zona;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvTl4IUuEe6MC-yrh3G8mA" name="setZona" specification="_HvOGUIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    this.zona = Objects.requireNonNull(zona, &quot;La zona no puede ser nula.&quot;);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvbhsIUuEe6MC-yrh3G8mA" name="getOrientacion" specification="_HvXQQIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return orientacion;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvkEkIUuEe6MC-yrh3G8mA" name="setOrientacion" specification="_HvfMEIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    this.orientacion = Objects.requireNonNull(orientacion, &quot;La orientación no puede ser nula.&quot;);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvsAYIUuEe6MC-yrh3G8mA" name="getCoordenada" specification="_Hvnu8IUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return coordenada;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HvzVIIUuEe6MC-yrh3G8mA" name="setCoordenada" specification="_HvvDsIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    Objects.requireNonNull(coordenada, &quot;La coordenada no puede ser nula.&quot;);
+    if (!zona.pertenece(coordenada)) {
+        throw new IllegalArgumentException(&quot;La coordenada no pertenece a la zona.&quot;);
+    }
+    this.coordenada = coordenada;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HwFB8IUuEe6MC-yrh3G8mA" name="avanzar" specification="_Hv2_gIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    int nuevaCoordenadaX = coordenada.x();
+    int nuevaCoordenadaY = coordenada.y();
+    /*switch (orientacion) {
+            case NORTE -> nuevaCoordenadaY++;
+            case NORESTE -> { nuevaCoordenadaX++; nuevaCoordenadaY++; }
+            case ESTE -> nuevaCoordenadaX++;
+            case SURESTE -> { nuevaCoordenadaX++; nuevaCoordenadaY--; }
+            case SUR -> nuevaCoordenadaY--;
+            case SUROESTE -> { nuevaCoordenadaX--; nuevaCoordenadaY--; }
+            case OESTE -> nuevaCoordenadaX--;
+            case NOROESTE -> { nuevaCoordenadaX--; nuevaCoordenadaY++; }
+        }*/
+    Coordenada nuevaCoordenada = new Coordenada(nuevaCoordenadaX, nuevaCoordenadaY);
+    if (!zona.pertenece(nuevaCoordenada)) {
+        throw new OperationNotSupportedException(&quot;No se puede avanzar, ya que se sale de la zona.&quot;);
+    }
+    coordenada = nuevaCoordenada;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HwJ6cIUuEe6MC-yrh3G8mA" name="girarALaDerecha" specification="_HwIFQIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    int ordinalOrientacion = getOrientacion().ordinal() + 1;
+    ordinalOrientacion %= Orientacion.values().length;
+    setOrientacion(Orientacion.values()[ordinalOrientacion]);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HwNk0IUuEe6MC-yrh3G8mA" name="girarALaIzquierda" specification="_HwMWsIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    int ordinalOrientacion = getOrientacion().ordinal() - 1;
+    ordinalOrientacion += Orientacion.values().length;
+    ordinalOrientacion %= Orientacion.values().length;
+    setOrientacion(Orientacion.values()[ordinalOrientacion]);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HxLOIIUuEe6MC-yrh3G8mA" name="equals" specification="_HwX84IUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    if (this == o)
+        return true;
+    //return Objects.equals(zona, robot.zona) &amp;&amp; Objects.equals(coordenada, robot.coordenada) &amp;&amp; orientacion == robot.orientacion;
+    return true;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HxTJ8IUuEe6MC-yrh3G8mA" name="hashCode" specification="_HxORcIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return Objects.hash(zona, coordenada, orientacion);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hxbs0IUuEe6MC-yrh3G8mA" name="toString" specification="_HxWNQIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return String.format(&quot;Robot[zona=%s, coordenada=%s, orientación=%s]&quot;, this.zona, this.coordenada, this.orientacion);
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HtXsMIUuEe6MC-yrh3G8mA" name="Robot" visibility="public" method="_HtluoIUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HtrOMIUuEe6MC-yrh3G8mA" name="Robot" visibility="public" method="_Ht8T8IUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ht4pkIUuEe6MC-yrh3G8mA" name="zona" type="_gTBowIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HuBMcIUuEe6MC-yrh3G8mA" name="Robot" visibility="public" method="_HuUHYIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HuOAwIUuEe6MC-yrh3G8mA" name="zona" type="_gTBowIUtEe6lAqwTcRpJlQ"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HuREEIUuEe6MC-yrh3G8mA" name="orientacion" type="_lLa7EIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Hua1EIUuEe6MC-yrh3G8mA" name="Robot" visibility="public" method="_HuxaYIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HumbQIUuEe6MC-yrh3G8mA" name="zona" type="_gTBowIUtEe6lAqwTcRpJlQ"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HuqssIUuEe6MC-yrh3G8mA" name="orientacion" type="_lLa7EIUtEe6lAqwTcRpJlQ"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HuuXEIUuEe6MC-yrh3G8mA" name="coordenada" type="_NWwMAIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Hu1EwIUuEe6MC-yrh3G8mA" name="Robot" visibility="public" method="_Hu-1wIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Hu9AkIUuEe6MC-yrh3G8mA" name="robot" type="_HslpEIUuEe6MC-yrh3G8mA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HvBSAIUuEe6MC-yrh3G8mA" name="getZona" visibility="public" method="_HvH_sIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvE8YIUuEe6MC-yrh3G8mA" type="_gTBowIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HvOGUIUuEe6MC-yrh3G8mA" name="setZona" visibility="private" method="_HvTl4IUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvRJoIUuEe6MC-yrh3G8mA" name="zona" type="_gTBowIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HvXQQIUuEe6MC-yrh3G8mA" name="getOrientacion" visibility="public" method="_HvbhsIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvZsgIUuEe6MC-yrh3G8mA" type="_lLa7EIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HvfMEIUuEe6MC-yrh3G8mA" name="setOrientacion" visibility="private" method="_HvkEkIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvhoUIUuEe6MC-yrh3G8mA" name="orientacion" type="_lLa7EIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Hvnu8IUuEe6MC-yrh3G8mA" name="getCoordenada" visibility="public" method="_HvsAYIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvqLMIUuEe6MC-yrh3G8mA" type="_NWwMAIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HvvDsIUuEe6MC-yrh3G8mA" name="setCoordenada" visibility="private" method="_HvzVIIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Hvxf8IUuEe6MC-yrh3G8mA" name="coordenada" type="_NWwMAIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Hv2_gIUuEe6MC-yrh3G8mA" name="avanzar" visibility="public" method="_HwFB8IUuEe6MC-yrh3G8mA" raisedException="_Hv74AIUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HwIFQIUuEe6MC-yrh3G8mA" name="girarALaDerecha" visibility="public" method="_HwJ6cIUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HwMWsIUuEe6MC-yrh3G8mA" name="girarALaIzquierda" visibility="public" method="_HwNk0IUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HwX84IUuEe6MC-yrh3G8mA" name="equals" visibility="public" method="_HxLOIIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HxGVoIUuEe6MC-yrh3G8mA" type="_gcUHoIUtEe6lAqwTcRpJlQ" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HxJY8IUuEe6MC-yrh3G8mA" name="o" type="_HwQoIIUuEe6MC-yrh3G8mA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HxORcIUuEe6MC-yrh3G8mA" name="hashCode" visibility="public" method="_HxTJ8IUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HxQtsIUuEe6MC-yrh3G8mA" type="_NXekwIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HxWNQIUuEe6MC-yrh3G8mA" name="toString" visibility="public" method="_Hxbs0IUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HxZ3oIUuEe6MC-yrh3G8mA" type="_lLkFAYUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RS9tcIUuEe6MC-yrh3G8mA" name="ControladorRobot" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RS-7kIUuEe6MC-yrh3G8mA" name="robot" visibility="private" type="_HslpEIUuEe6MC-yrh3G8mA" isUnique="false" aggregation="composite" association="_m_zF8IUxEe6MC-yrh3G8mA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RTGQUIUuEe6MC-yrh3G8mA" name="ControladorRobot" specification="_RTAJsIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    this.robot = new Robot(robot);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RTHecYUuEe6MC-yrh3G8mA" name="getRobot" specification="_RTG3YIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    return new Robot(robot);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RTKhwIUuEe6MC-yrh3G8mA" name="ejecutar" specification="_RTIskYUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+/*switch (comando) {
+            case 'A', 'a' -> robot.avanzar();
+            case 'I', 'i' -> robot.girarALaIzquierda();
+            case 'D', 'd' -> robot.girarALaDerecha();
+            default -> throw new OperationNotSupportedException(&quot;Comando desconocido.&quot;);
+        }*/
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RTAJsIUuEe6MC-yrh3G8mA" name="ControladorRobot" visibility="public" method="_RTGQUIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RTFpQIUuEe6MC-yrh3G8mA" name="robot" type="_HslpEIUuEe6MC-yrh3G8mA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RTG3YIUuEe6MC-yrh3G8mA" name="getRobot" visibility="public" method="_RTHecYUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RTHecIUuEe6MC-yrh3G8mA" type="_HslpEIUuEe6MC-yrh3G8mA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RTIskYUuEe6MC-yrh3G8mA" name="ejecutar" visibility="public" method="_RTKhwIUuEe6MC-yrh3G8mA" raisedException="_Hv74AIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RTJToIUuEe6MC-yrh3G8mA" name="comando" type="_RTIskIUuEe6MC-yrh3G8mA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ifsX0IUxEe6MC-yrh3G8mA" name="A_zona_robot" memberEnd="_HtIboIUuEe6MC-yrh3G8mA _ifwpQIUxEe6MC-yrh3G8mA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ifwpQIUxEe6MC-yrh3G8mA" name="robot" type="_HslpEIUuEe6MC-yrh3G8mA" association="_ifsX0IUxEe6MC-yrh3G8mA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ifx3YIUxEe6MC-yrh3G8mA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ifyecIUxEe6MC-yrh3G8mA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_jZ8ZkIUxEe6MC-yrh3G8mA" name="A_coordenada_robot" memberEnd="_HtMtEIUuEe6MC-yrh3G8mA _jZ-10IUxEe6MC-yrh3G8mA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_jZ-10IUxEe6MC-yrh3G8mA" name="robot" type="_HslpEIUuEe6MC-yrh3G8mA" association="_jZ8ZkIUxEe6MC-yrh3G8mA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jZ_c4IUxEe6MC-yrh3G8mA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jZ_c4YUxEe6MC-yrh3G8mA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_kXaHYIUxEe6MC-yrh3G8mA" name="A_orientacion_robot" memberEnd="_HtWeEIUuEe6MC-yrh3G8mA _kXcjoIUxEe6MC-yrh3G8mA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_kXcjoIUxEe6MC-yrh3G8mA" name="robot" type="_HslpEIUuEe6MC-yrh3G8mA" association="_kXaHYIUxEe6MC-yrh3G8mA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kXdKsIUxEe6MC-yrh3G8mA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kXdKsYUxEe6MC-yrh3G8mA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_m_zF8IUxEe6MC-yrh3G8mA" name="A_robot_controladorRobot" memberEnd="_RS-7kIUuEe6MC-yrh3G8mA _m_1iMIUxEe6MC-yrh3G8mA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_m_1iMIUxEe6MC-yrh3G8mA" name="controladorRobot" type="_RS9tcIUuEe6MC-yrh3G8mA" association="_m_zF8IUxEe6MC-yrh3G8mA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m_1iMYUxEe6MC-yrh3G8mA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m_2JQIUxEe6MC-yrh3G8mA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gTBowIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTEFAIUtEe6lAqwTcRpJlQ" name="ANCHO_MINIMO" visibility="public" isLeaf="true" isStatic="true" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gTFTIIUtEe6lAqwTcRpJlQ" name="defaultValue">
+              <language>JAVA</language>
+              <body>10</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTKysIUtEe6lAqwTcRpJlQ" name="ANCHO_MAXIMO" visibility="public" isLeaf="true" isStatic="true" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gTMA0IUtEe6lAqwTcRpJlQ" name="defaultValue">
+              <language>JAVA</language>
+              <body>100</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTNO8IUtEe6lAqwTcRpJlQ" name="ALTO_MINIMO" visibility="public" isLeaf="true" isStatic="true" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gTOdEIUtEe6lAqwTcRpJlQ" name="defaultValue">
+              <language>JAVA</language>
+              <body>10</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTPEIIUtEe6lAqwTcRpJlQ" name="ALTO_MAXIMO" visibility="public" isLeaf="true" isStatic="true" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gTQSQIUtEe6lAqwTcRpJlQ" name="defaultValue">
+              <language>JAVA</language>
+              <body>100</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTQ5UIUtEe6lAqwTcRpJlQ" name="ancho" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gTSHcIUtEe6lAqwTcRpJlQ" name="alto" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbJqAIUtEe6lAqwTcRpJlQ" name="Zona" specification="_gTb4cIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    validarAncho(ancho);
+    validarAlto(alto);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbeaIIUtEe6lAqwTcRpJlQ" name="Zona" specification="_gbQXsIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    this(ANCHO_MINIMO, ALTO_MINIMO);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbpZQIUtEe6lAqwTcRpJlQ" name="validarAncho" specification="_gbjSoIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    if (ancho &lt; ANCHO_MINIMO || ancho > ANCHO_MAXIMO) {
+        throw new IllegalArgumentException(&quot;Ancho no válido.&quot;);
+    }
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbyjMIUtEe6lAqwTcRpJlQ" name="validarAlto" specification="_gbtqsIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    if (alto &lt; ALTO_MINIMO || alto > ALTO_MAXIMO) {
+        throw new IllegalArgumentException(&quot;Alto no válido.&quot;);
+    }
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gcOoEIUtEe6lAqwTcRpJlQ" name="getCentro" specification="_gb20oIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    return new Coordenada(ancho / 2, alto / 2);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gcaOQIUtEe6lAqwTcRpJlQ" name="pertenece" specification="_gcSScIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    Objects.requireNonNull(coordenada, &quot;La coordenada no puede ser nula.&quot;);
+    return perteneceX(coordenada.x()) &amp;&amp; perteneceY(coordenada.y());
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gcixIIUtEe6lAqwTcRpJlQ" name="perteneceX" specification="_gcefsIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    return (x >= 0) &amp;&amp; (x &lt;= this.ancho);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gcr7EIUtEe6lAqwTcRpJlQ" name="perteneceY" specification="_gcmbgIUtEe6lAqwTcRpJlQ">
+            <language>JAVA</language>
+            <body>
+    return (y >= 0) &amp;&amp; (y &lt;= this.alto);
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gTb4cIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public" method="_gbJqAIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gax2kIUtEe6lAqwTcRpJlQ" name="ancho" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ga2vEIUtEe6lAqwTcRpJlQ" name="alto" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gbQXsIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public" method="_gbeaIIUtEe6lAqwTcRpJlQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gbjSoIUtEe6lAqwTcRpJlQ" name="validarAncho" visibility="private" method="_gbpZQIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gblu4IUtEe6lAqwTcRpJlQ" name="ancho" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gbtqsIUtEe6lAqwTcRpJlQ" name="validarAlto" visibility="private" method="_gbyjMIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gbwG8IUtEe6lAqwTcRpJlQ" name="alto" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gb20oIUtEe6lAqwTcRpJlQ" name="getCentro" visibility="public" method="_gcOoEIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcK9sIUtEe6lAqwTcRpJlQ" type="_NWwMAIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gcSScIUtEe6lAqwTcRpJlQ" name="pertenece" visibility="public" method="_gcaOQIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcVVwIUtEe6lAqwTcRpJlQ" type="_gcUHoIUtEe6lAqwTcRpJlQ" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcXK8IUtEe6lAqwTcRpJlQ" name="coordenada" type="_NWwMAIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gcefsIUtEe6lAqwTcRpJlQ" name="perteneceX" visibility="private" method="_gcixIIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcfGwIUtEe6lAqwTcRpJlQ" type="_gcUHoIUtEe6lAqwTcRpJlQ" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcgU4IUtEe6lAqwTcRpJlQ" name="x" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gcmbgIUtEe6lAqwTcRpJlQ" name="perteneceY" visibility="private" method="_gcr7EIUtEe6lAqwTcRpJlQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gco3wIUtEe6lAqwTcRpJlQ" type="_gcUHoIUtEe6lAqwTcRpJlQ" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gcqF4IUtEe6lAqwTcRpJlQ" name="y" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_D2FmsIUwEe6MC-yrh3G8mA" name="vista">
+        <packagedElement xmi:type="uml:Class" xmi:id="_aHBkEIUuEe6MC-yrh3G8mA" name="Consola" visibility="public">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHHDoIUuEe6MC-yrh3G8mA" name="Consola" specification="_aHCLIIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHI40IUuEe6MC-yrh3G8mA" name="mostrarMenuPrincipal" specification="_aHIRwIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.println(&quot;Programa para modelar el movimiento de un robot, por una zona de la habitación, a base de comandos&quot;);
+    System.out.println(&quot;--------------------------------------------------------------------------------------------------&quot;);
+    System.out.println();
+    System.out.println(&quot;1.- Controlar un robot por defecto.&quot;);
+    System.out.println(&quot;2.- Controlar un robot definiendo la zona.&quot;);
+    System.out.println(&quot;3.- Controlar un robot definiendo la zona y la orientación.&quot;);
+    System.out.println(&quot;4.- Controlar un robot definiendo la zona, la orientación y su coordenada inicial.&quot;);
+    System.out.println(&quot;5.- Ejecutar comando.&quot;);
+    System.out.println();
+    System.out.println(&quot;0.- Salir.&quot;);
+    System.out.println();
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHL8IIUuEe6MC-yrh3G8mA" name="elegitOpcion" specification="_aHKG8IUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    int opcion;
+    do {
+        System.out.print(&quot;Elige una opción (0-5): &quot;);
+        opcion = Entrada.entero();
+    } while (opcion &lt; 0 || opcion > 5);
+    return opcion;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHW7QIUuEe6MC-yrh3G8mA" name="elegirZona" specification="_aHMjMIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    Zona zona = null;
+    do {
+        System.out.print(&quot;Indica el ancho de la zona: &quot;);
+        int ancho = Entrada.entero();
+        System.out.print(&quot;Indica el alto de la zona: &quot;);
+        int alto = Entrada.entero();
+        try {
+            zona = new Zona(ancho, alto);
+        } catch (IllegalArgumentException iae) {
+            System.out.println(&quot;ERROR: &quot; + iae.getMessage());
+        }
+    } while (zona == null);
+    return zona;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHYJYIUuEe6MC-yrh3G8mA" name="mostrarMenuOrientacion" specification="_aHXiUIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.println(&quot;Orientaciones&quot;);
+    System.out.println(&quot;-------------&quot;);
+    System.out.println();
+    System.out.println(&quot;0.- Norte.&quot;);
+    System.out.println(&quot;1.- Noreste.&quot;);
+    System.out.println(&quot;2.- Este.&quot;);
+    System.out.println(&quot;3.- Sureste.&quot;);
+    System.out.println(&quot;4.- Sur.&quot;);
+    System.out.println(&quot;5.- Suroeste.&quot;);
+    System.out.println(&quot;6.- Oeste.&quot;);
+    System.out.println(&quot;7.- Noroeste.&quot;);
+    System.out.println();
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHeQAIUuEe6MC-yrh3G8mA" name="elegirOrientacion" specification="_aHYwcIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    int orientacion;
+    do {
+        System.out.print(&quot;Elige la orientación (0 - 7): &quot;);
+        orientacion = Entrada.entero();
+    } while (orientacion &lt; 0 || orientacion > 7);
+    /*return switch (orientacion) {
+            case 0 -> Orientacion.NORTE;
+            case 1 -> Orientacion.NORESTE;
+            case 2 -> Orientacion.ESTE;
+            case 3 -> Orientacion.SURESTE;
+            case 4 -> Orientacion.SUR;
+            case 5 -> Orientacion.SUROESTE;
+            case 6 -> Orientacion.OESTE;
+            case 7 -> Orientacion.NOROESTE;
+            default -> null;
+        };*/
+    return null;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHjvkIUuEe6MC-yrh3G8mA" name="elegirCoordenada" specification="_aHe3EIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.print(&quot;Indica la X de la coordenada: &quot;);
+    int x = Entrada.entero();
+    System.out.print(&quot;Indica la Y de la coordenada: &quot;);
+    int y = Entrada.entero();
+    return new Coordenada(x, y);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHlkwIUuEe6MC-yrh3G8mA" name="elegirComando" specification="_aHkWoIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.print(&quot;Indica el comando a ejecutar: &quot;);
+    return Entrada.caracter();
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHmL0YUuEe6MC-yrh3G8mA" name="despedirse" specification="_aHmL0IUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.println(&quot;Hasta luego Lucas!!!!&quot;);
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHs5gIUuEe6MC-yrh3G8mA" name="mostrarRobot" specification="_aHrEUIUuEe6MC-yrh3G8mA">
+            <language>JAVA</language>
+            <body>
+    System.out.println();
+    if (controladorRobot != null) {
+        System.out.println(controladorRobot.getRobot());
+    } else {
+        System.out.println(&quot;Aun no se ha creado ningún robot que controlar.&quot;);
+    }
+    System.out.println();
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHCLIIUuEe6MC-yrh3G8mA" name="Consola" visibility="private" method="_aHHDoIUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHIRwIUuEe6MC-yrh3G8mA" name="mostrarMenuPrincipal" visibility="public" isStatic="true" method="_aHI40IUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHKG8IUuEe6MC-yrh3G8mA" name="elegitOpcion" visibility="public" isStatic="true" method="_aHL8IIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHKuAIUuEe6MC-yrh3G8mA" type="_NXekwIUtEe6lAqwTcRpJlQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHMjMIUuEe6MC-yrh3G8mA" name="elegirZona" visibility="public" isStatic="true" method="_aHW7QIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHWUMIUuEe6MC-yrh3G8mA" type="_aHNKQIUuEe6MC-yrh3G8mA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHXiUIUuEe6MC-yrh3G8mA" name="mostrarMenuOrientacion" visibility="public" isStatic="true" method="_aHYJYIUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHYwcIUuEe6MC-yrh3G8mA" name="elegirOrientacion" visibility="public" isStatic="true" method="_aHeQAIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHdo8IUuEe6MC-yrh3G8mA" type="_aHZXgIUuEe6MC-yrh3G8mA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHe3EIUuEe6MC-yrh3G8mA" name="elegirCoordenada" visibility="public" isStatic="true" method="_aHjvkIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHjIgIUuEe6MC-yrh3G8mA" type="_aHe3EYUuEe6MC-yrh3G8mA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHkWoIUuEe6MC-yrh3G8mA" name="elegirComando" visibility="public" isStatic="true" method="_aHlkwIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHk9sIUuEe6MC-yrh3G8mA" type="_RTIskIUuEe6MC-yrh3G8mA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHmL0IUuEe6MC-yrh3G8mA" name="despedirse" visibility="public" isStatic="true" method="_aHmL0YUuEe6MC-yrh3G8mA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aHrEUIUuEe6MC-yrh3G8mA" name="mostrarRobot" visibility="public" isStatic="true" method="_aHs5gIUuEe6MC-yrh3G8mA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aHsScIUuEe6MC-yrh3G8mA" name="controladorRobot" type="_aHmy4IUuEe6MC-yrh3G8mA"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_p2CTQIUxEe6MC-yrh3G8mA" name="A_controladorRobot_main" memberEnd="_n45_kIUuEe6MC-yrh3G8mA _p2EIcIUxEe6MC-yrh3G8mA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_p2EIcIUxEe6MC-yrh3G8mA" name="main" type="_n4yq0IUuEe6MC-yrh3G8mA" association="_p2CTQIUxEe6MC-yrh3G8mA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p2EvgIUxEe6MC-yrh3G8mA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p2EvgYUxEe6MC-yrh3G8mA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qqV3UIUsEe653f5rCCI_Kw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qqdMEIUsEe653f5rCCI_Kw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qqiroIUsEe653f5rCCI_Kw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qqlH4IUsEe653f5rCCI_Kw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qqlH4YUsEe653f5rCCI_Kw" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qqlH4oUsEe653f5rCCI_Kw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qqlH44UsEe653f5rCCI_Kw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qqlH5IUsEe653f5rCCI_Kw" key="Date" value="2023-10-27"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qqlH5YUsEe653f5rCCI_Kw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qqj5wIUsEe653f5rCCI_Kw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/Robot/src/main/resources/uml/record.profile.uml#_Dg6YwHSZEe6RyuvFF9iE1Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/Robot/src/main/resources/uml/record.profile.uml#_jHGY0HSYEe6RyuvFF9iE1Q"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6XGrIIUsEe653f5rCCI_Kw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6XHSMIUsEe653f5rCCI_Kw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6XV7sIUsEe653f5rCCI_Kw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6XWiwIUsEe653f5rCCI_Kw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_gaoFkIUtEe6lAqwTcRpJlQ" base_BehavioralFeature="_gTb4cIUtEe6lAqwTcRpJlQ"/>
+  <standard:Create xmi:id="_gbaIsIUtEe6lAqwTcRpJlQ" base_BehavioralFeature="_gbQXsIUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_gcDB4IUtEe6lAqwTcRpJlQ" name="Coordenada" base_Classifier="_NWwMAIUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_lLpkkIUtEe6lAqwTcRpJlQ" name="java.lang.String" base_Classifier="_lLkFAYUtEe6lAqwTcRpJlQ"/>
+  <standard:Create xmi:id="_lLw5UIUtEe6lAqwTcRpJlQ" base_BehavioralFeature="_lLsn4IUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_HtC8EIUuEe6MC-yrh3G8mA" name="Zona" base_Classifier="_gTBowIUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_HtUo4IUuEe6MC-yrh3G8mA" name="Orientacion" base_Classifier="_lLa7EIUtEe6lAqwTcRpJlQ"/>
+  <standard:Create xmi:id="_HteZ4IUuEe6MC-yrh3G8mA" base_BehavioralFeature="_HtXsMIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_Htyi8IUuEe6MC-yrh3G8mA" base_BehavioralFeature="_HtrOMIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_HuJvUIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_HuBMcIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_Hug7sIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_Hua1EIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_Hu59QIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_Hu1EwIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_HwAJcIUuEe6MC-yrh3G8mA" name="javax.naming.OperationNotSupportedException" base_Classifier="_Hv74AIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_HwU5kIUuEe6MC-yrh3G8mA" name="java.lang.Object" base_Classifier="_HwQoIIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_RTD0EIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_RTAJsIUuEe6MC-yrh3G8mA"/>
+  <standard:Create xmi:id="_aHF1gIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_aHCLIIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_aHVGEIUuEe6MC-yrh3G8mA" name="Zona" base_Classifier="_aHNKQIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_aHca0IUuEe6MC-yrh3G8mA" name="Orientacion" base_Classifier="_aHZXgIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_aHihcIUuEe6MC-yrh3G8mA" name="Coordenada" base_Classifier="_aHe3EYUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_aHp2MIUuEe6MC-yrh3G8mA" name="ControladorRobot" base_Classifier="_aHmy4IUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_n44KYIUuEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot.modelo.ControladorRobot" base_Classifier="_RS9tcIUuEe6MC-yrh3G8mA"/>
+  <record:Record xmi:id="_uWl0sIUuEe6MC-yrh3G8mA" base_Class="_NWwMAIUtEe6lAqwTcRpJlQ"/>
+  <record:Record xmi:id="_1J0cAIUuEe6MC-yrh3G8mA" base_Class="_gTBowIUtEe6lAqwTcRpJlQ"/>
+</xmi:XMI>
