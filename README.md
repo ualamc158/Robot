@@ -52,9 +52,9 @@ Para ello te pongo un diagrama de clases para el mismo y poco a poco te iré exp
 1. Crea un enumerado llamado `Orientacion` que contenga los literales: `NORTE`, `NORESTE`, `ESTE`, `SURESTE`, `SUR`, `SUROESTE`, `OESTE`, `NOROESTE` y que a la hora de mostrarlos los muestre con el nombre en minúscula pero la inicial en mayúsculas. 
 2. Comprueba que pasa los tests y realiza un commit.
 
-#### Registro `Posicion`
+#### Registro `Coordenada`
 
-1. Crea el registro `Posicion` tal y como se indica en el diagrama. 
+1. Crea el registro `Coordenada` tal y como se indica en el diagrama. 
 2. Comprueba que pasa los tests y realiza un commit.
 
 #### Registro `Zona`
