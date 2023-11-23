@@ -50,7 +50,7 @@ class RobotTest {
     }
 
     @ParameterizedTest(name = "Cuando llamamos al constructor con una zona válida como [{0}, {1}] crea el robot con esa zona, orientado al norte y situado en el centro de la zona => [{2}, {3}].")
-    @CsvSource({"10, 10, 5, 5", "10, 5, 5, 2", "5, 10, 2, 5", "5, 5, 2, 2"})
+    @CsvSource({"20, 20, 10, 10", "20, 10, 10, 5", "10, 20, 5, 10", "10, 10, 5, 5"})
     void constructorConZonaValidaCreaRobotOrientadoAlNorteYSituadoEnElCentroDeLaZona(int ancho, int alto, int x, int y) {
         Coordenada coordenada = getCoordenada(x, y);
         Zona zona = getZona(ancho, alto, coordenada);
