@@ -7,8 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import javax.naming.OperationNotSupportedException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -162,8 +161,8 @@ class RobotTest {
         Zona zona = new Zona();
         Coordenada coordenada = getCoordenada(x, y);
         Robot robot = new Robot(zona, orientacion, coordenada);
-        OperationNotSupportedException onse = assertThrows(OperationNotSupportedException.class, robot::avanzar);
-        assertEquals("No se puede avanzar, ya que se sale de la zona.", onse.getMessage());
+        RobotExcepcion re = assertThrows(RobotExcepcion.class, robot::avanzar);
+        assertEquals("No se puede avanzar, ya que se sale de la zona.", re.getMessage());
     }
 
     @ParameterizedTest(name = "Cuando giramos el robot a la derecha partiendo de una orientación {0} obtenemos la orientación girada correctamente {1}")

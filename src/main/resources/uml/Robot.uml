@@ -10,7 +10,20 @@
         <packagedElement xmi:type="uml:Package" xmi:id="_NWr6kIUtEe6lAqwTcRpJlQ" name="iesalandalus">
           <packagedElement xmi:type="uml:Package" xmi:id="_NWshoIUtEe6lAqwTcRpJlQ" name="programacion">
             <packagedElement xmi:type="uml:Package" xmi:id="_NWtIsIUtEe6lAqwTcRpJlQ" name="robot">
-              <packagedElement xmi:type="uml:Package" xmi:id="_NWtvwIUtEe6lAqwTcRpJlQ" name="modelo"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_NWtvwIUtEe6lAqwTcRpJlQ" name="modelo">
+                <packagedElement xmi:type="uml:Class" xmi:id="_UW6DEKZWEe-9uq0pAHyi0A" name="RobotExcepcion" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_UXB-4KZWEe-9uq0pAHyi0A" general="_UW8fUKZWEe-9uq0pAHyi0A"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UXIFgKZWEe-9uq0pAHyi0A" name="RobotExcepcion" specification="_UXDNAKZWEe-9uq0pAHyi0A">
+                    <language>JAVA</language>
+                    <body>
+    super(message);
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_UXDNAKZWEe-9uq0pAHyi0A" name="RobotExcepcion" visibility="public" method="_UXIFgKZWEe-9uq0pAHyi0A">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_UXFpQKZWEe-9uq0pAHyi0A" name="message" type="_lLkFAYUtEe6lAqwTcRpJlQ"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_aHAV8IUuEe6MC-yrh3G8mA" name="vista">
                 <packagedElement xmi:type="uml:Class" xmi:id="_aHNKQIUuEe6MC-yrh3G8mA" name="Zona"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_aHZXgIUuEe6MC-yrh3G8mA" name="Orientacion"/>
@@ -39,6 +52,7 @@
         <packagedElement xmi:type="uml:Package" xmi:id="_lLkFAIUtEe6lAqwTcRpJlQ" name="lang">
           <packagedElement xmi:type="uml:Class" xmi:id="_lLkFAYUtEe6lAqwTcRpJlQ" name="String"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_HwQoIIUuEe6MC-yrh3G8mA" name="Object"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_UW8fUKZWEe-9uq0pAHyi0A" name="Exception"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -767,4 +781,6 @@
   <Codegen:External xmi:id="_n44KYIUuEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot.modelo.ControladorRobot" base_Classifier="_RS9tcIUuEe6MC-yrh3G8mA"/>
   <record:Record xmi:id="_uWl0sIUuEe6MC-yrh3G8mA" base_Class="_NWwMAIUtEe6lAqwTcRpJlQ"/>
   <record:Record xmi:id="_1J0cAIUuEe6MC-yrh3G8mA" base_Class="_gTBowIUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_UXBX0KZWEe-9uq0pAHyi0A" name="java.lang.Exception" base_Classifier="_UW8fUKZWEe-9uq0pAHyi0A"/>
+  <standard:Create xmi:id="_UXFCMKZWEe-9uq0pAHyi0A" base_BehavioralFeature="_UXDNAKZWEe-9uq0pAHyi0A"/>
 </xmi:XMI>
