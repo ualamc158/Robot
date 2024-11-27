@@ -9,6 +9,7 @@ public class ControladorRobot {
 
     public Robot getRobot() {
         return new Robot(robot);
+
     }
 
     public void ejecutar(char comando) {
