@@ -19,7 +19,6 @@ public class Consola {
     }
 
     public static int elegirOpcion() {
-        mostrarMenuPrincipal();
         int opcionElegida;
         do {
             System.out.print("Introduzca el número de la opción seleccionada: ");
@@ -78,7 +77,7 @@ public class Consola {
     }
 
     public static char elegirComando() {
-        System.out.println("Los comandos son: \n'A' para avanzar \n'D' para girar a la derecha \n'I' para girar a la izquierda");
+        System.out.println("Los comandos son: \n'A / a' para avanzar \n'D / d' para girar a la derecha \n'I / i' para girar a la izquierda");
         char c;
         System.out.print("Indique el comando a ejecutar: ");
         c = Entrada.caracter();
