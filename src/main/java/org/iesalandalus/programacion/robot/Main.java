@@ -14,7 +14,12 @@ public class Main {
             Consola.mostrarMenuPrincipal();
             opcion = Consola.elegirOpcion();
             ejecutarOpcion(opcion);
-            System.out.println(controladorRobot.getRobot());
+            if(controladorRobot == null) {
+                System.out.println("El robot no puede ser nulo");
+                System.out.println();
+            } else {
+                System.out.println(controladorRobot.getRobot());
+            }
             System.out.println();
         } while (opcion != 6);
 

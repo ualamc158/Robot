@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.robot.modelo;
 
+import java.util.Objects;
+
 public class ControladorRobot {
     private Robot robot;
 
@@ -9,7 +11,6 @@ public class ControladorRobot {
 
     public Robot getRobot() {
         return new Robot(robot);
-
     }
 
     public void ejecutar(char comando) {
